@@ -1,36 +1,67 @@
-baseURL = "https://mooseinthecrowd.github.io/"
+baseURL = "http://mooseinthecrowd.github.io/"
 languageCode = "en-us"
 title = "Mooseinthecrowd"
-copyright = "Copyright infomation."
-themesdir = "themes"
-theme = "hugo_eiio"
-Paginate=15 
-PaginatePath="page"
-pygmentsuseclasses = true
-disqusShortname = "user id"
-googleAnalytics='google analytics code'
-preserveTaxonomyNames = false
-disablePathToLower = true
-hasCJKLanguage = true
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
+theme = "minimal"
+# disqusShortname = "username" # delete this to disable disqus comments
+googleAnalytics = ""
 
 [params]
-  hljsStyle="atom-one-dark" #code highlightjs css style . See [Style List](https://github.com/highlightjs/highlight.js/tree/master/src/styles "CSS Style list")
-  showNextAndPrePost = false #Is Show Next and Previous Post Button
-  description = "site description"
-  author = "your name"
-  github ="github username"
-  email="your email"
-  twitter="your twitter name" 
-  securityPolicy = false #disable https content security policy
-  footerRight="Your tips content" #footer right content
-  addthisID="addthis.com sharder plugin id"
-  mainSections = ['page']
+    author = "Johnathan Butler"
+    description = "Indie Development Blog"
+    githubUsername = "mooseinthecrowd"
+    accent = "pink"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Didact Gothic" # should match the name on Google Fonts!
+    highlight = true
+    highlightStyle = "default"
+    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
 
-[sitemap]
-  changefreq = "monthly"
-  priority = 0.5
-  filename = "sitemap.xml"
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 2
+
+[[menu.main]]
+    url = "/post/"
+    name = "Posts"
+    weight = 3
+
+[[menu.main]]
+    url = "/project/"
+    name = "Projects"
+    weight = 4
+
+# Social icons to be shown on the right-hand side of the navigation bar.
+# The "name" field should match the name of the icon in Font Awesome.
+# The list of available icons can be found at http://fontawesome.io/icons.
+
+[[menu.icon]]
+    url = "mailto:me@example.com"
+    name = "envelope-o"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/username/"
+    name = "github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/username/"
+    name = "twitter"
+    weight = 3
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/username/"
+    name = "linkedin"
+    weight = 4
+
+[[menu.icon]]
+    url = "https://www.stackoverflow.com/username/"
+    name = "stack-overflow"
+    weight = 5
